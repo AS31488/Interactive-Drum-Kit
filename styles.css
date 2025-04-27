@@ -1,0 +1,32 @@
+body{
+	background-image:url('https://images.pexels.com/photos/11484397/pexels-photo-11484397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	margin:0;
+	color:white;
+}
+
+.drum-kit{
+	display:grid;
+	grid-template-columns:repeat(3,100px);
+	gap:20px;
+}
+
+.drum{
+	background:rgba(0,0,0,0.7);
+	border:2px solid yellow;
+	border-radius:10px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:24px;
+	cursor:pointer;
+	transition:transform 0.1s;
+}
+
+.drum:active{
+	transform:scale(0.95);
+}
